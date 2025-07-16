@@ -1,0 +1,19 @@
+{
+    "manifest_version": 3,
+    "name": "noFund",
+    "version": "1.1",
+    "description": "Automatically removes the fundraising banner on Wikipedia pages.",
+    "permissions": ["activeTab", "scripting"],
+    "icons": {
+      "16": "noFund.png",
+      "48": "noFund.png",
+      "128": "noFund.png"
+    },
+    "content_scripts": [
+      {
+        "matches": ["*://*.wikipedia.org/*"],
+        "js": ["content.js"]
+      }
+    ]
+  }
+  
